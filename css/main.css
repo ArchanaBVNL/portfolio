@@ -81,7 +81,7 @@ a:hover {
 }
 
 .profile-picture {
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-left: 18vw;
 }
 
@@ -222,7 +222,7 @@ blockquote:after {
 .content-container > section > .content{
   width: 75%;
   font-size: 1.25rem;
-  text-align: justify;
+  text-align: left;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   padding: 80px;
@@ -534,7 +534,7 @@ tr:nth-child(even) {
 
 .projectCardContent {
   padding: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 .projectDesc {
@@ -591,7 +591,7 @@ tr:nth-child(even) {
 
 .testimonial-card-content {
   padding: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 .testimonial-author {
@@ -773,7 +773,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   }
 
   .navigation > ul > li {
-      margin: 2rem 0rem 1rem -3rem;
+      margin: 2rem ​0rem 1rem -3rem;
   }
 
   .hamburger {
@@ -807,9 +807,13 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     margin-top: 35%;
   }
 
+  blockquote {
+    font-size: 1rem;
+  }
+  
   blockquote:before,
   blockquote:after {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   /*For about me*/
@@ -885,6 +889,14 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     margin-top:7%;
     width: 30px;
     height: 30px;
+  }
+
+  .t-card {
+    width: 50%;
+  }
+
+  .t-card-picture > img, .t-card-picture-man > img {
+    width: 20vw;
   }
 
   /* For 404 Error page */
