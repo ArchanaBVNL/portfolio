@@ -102,12 +102,12 @@ const getQuote = async () => {
     const nxtImage = document.getElementById('nextImage')
     // intialize hobby images list.
     const hobbyImages = [
-        "../project/images/hobbies/adventure.svg",
-        "../project/images/hobbies/cooking.svg",
-        "../project/images/hobbies/gardening.svg",
-        "../project/images/hobbies/painting.svg",
-        "../project/images/hobbies/photography.svg",
-        "../project/images/hobbies/exploring.svg"
+        "../images/hobbies/adventure.svg",
+        "../images/hobbies/cooking.svg",
+        "../images/hobbies/gardening.svg",
+        "../images/hobbies/painting.svg",
+        "../images/hobbies/photography.svg",
+        "../images/hobbies/exploring.svg"
     ];
     // if in About Me page then add an event listener to display previous image.
     if (prevImage != undefined) {
@@ -136,7 +136,7 @@ const nextImage = (hobbyImages) => {
     var image_temp = image.src.split('/');
     var image_name = image_temp[image_temp.length - 1];
     // set the relative path.
-    var image_path = `../project/images/hobbies/${image_name}`;
+    var image_path = `../images/hobbies/${image_name}`;
 
     // get the index of current image.
     let index = hobbyImages.indexOf(image_path);
@@ -160,7 +160,7 @@ const previousImage = (hobbyImages) => {
     var image_temp = image.src.split('/');
     var image_name = image_temp[image_temp.length - 1];
     // set the relative path.
-    var image_path = `../project/images/hobbies/${image_name}`;
+    var image_path = `../images/hobbies/${image_name}`;
 
     // get the index of current image.
     let index = hobbyImages.indexOf(image_path);
