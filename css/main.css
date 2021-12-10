@@ -22,18 +22,16 @@ a:hover {
   color:#1a8bbb;
 }
 
-footer {
-  position: relative;
-  vertical-align: bottom;
-  margin-top: 50px;
-  width: 100%;
+.errorContainer {
+  display: block;
+  text-align: center;
+  margin-top:20px;
+  padding:30px;
 }
 
-footer p {
-  height: 20px;
-  font-size:14px;
-  color: #2e4756;
-  text-align: center;
+.errorContainer > img {
+  width: 35vw;
+  height: 35vw;
 }
 /*------------------------------------------------------------------------
 # Navigation Menu Settings
@@ -887,5 +885,11 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     margin-top:7%;
     width: 30px;
     height: 30px;
+  }
+
+  /* For 404 Error page */
+  .errorContainer > img {
+    width: 60vw;
+    height: 60vw;
   }
 }
