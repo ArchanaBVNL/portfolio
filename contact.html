@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Archana Bhogaraju - Contact me</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<script src="js/main.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="navigation">
+			<h1>Archana Bhogaraju</h1>
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="contact.html" class="highlight">Contact</a></li>
+			</ul>
+			<div class="hamburger"></div>
+		</nav>
+	</header>
+	<div class="contactContainer">
+		<section class="contactButtons">
+			<div>
+				<button id="btnLinkedin" class="button contact-button">
+					<img src="images/linkedin.svg" class="contact-button-image" alt="LinkedIn" />
+				</button>
+				<button id="btnTwitter" class="button contact-button">
+					<img src="images/twitter.svg" class="contact-button-image" alt="Twitter" />
+				</button>
+				<button id="btnEmail" class="button contact-button">
+					<img src="images/email.svg" class="contact-button-image" alt="Email" />
+				</button>
+			</div>
+		</section>
+		<div class="contactFormContainer">
+			<form name="contactForm" id="contactForm" method="post" action="#" novalidate>
+				<label for="fullName">Full Name <span class="required">*</span></label> <br>
+				<input id="fullName" type="text" name="fullName" required placeholder="John Doe" autocomplete=" off">
+				<div class="error" id="nameError"></div>
+				<label for="email">Email <span class="required">*</span></label><br>
+				<input id="email" type="email" name="email" required placeholder="johndoe@gmail.com" autocomplete="off">
+				<div class="error" id="emailError"></div>
+				<label for="message">Message <span class="required">*</span></label><br>
+				<textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message here ..."
+					required autocomplete="off"></textarea>
+				<div class="error" id="msgError"></div>
+				<input type="submit" class="submit" id="submitBtn" value="Submit">
+				<input type="reset" class="reset" id="resetBtn" value="Reset">
+			</form>
+			<div id="hideConfirmation" class="hideSubmitMessage">
+				<div class="contactText">
+					<span>
+						<h4>Thank you for contacting me!</h4>
+					</span>
+					<span><img src="images/circle-close.svg" id="closeMessage" class="closeMessage" alt="icon to close"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>© 2021 Archana Bhogaraju</p>
+	</footer>
+</body>
+
+</html>

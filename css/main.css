@@ -1,0 +1,891 @@
+/*------------------------------------------------------------------------
+# Common Settings - for body font and color, hyperlink and its hover color
+--------------------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e4756;
+  background:linear-gradient(1deg, #c5c4e9, rgba(255, 255, 255, 0));
+  min-height: 100vh;
+  height: 100%;
+}
+
+a {
+  color:#4a70a1;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#1a8bbb;
+}
+
+footer {
+  position: relative;
+  vertical-align: bottom;
+  margin-top: 50px;
+  width: 100%;
+}
+
+footer p {
+  height: 20px;
+  font-size:14px;
+  color: #2e4756;
+  text-align: center;
+}
+/*------------------------------------------------------------------------
+# Navigation Menu Settings
+# for navigation options - About Me, Experience, Contact
+--------------------------------------------------------------------------*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1.6rem;
+  height: 60px;
+}
+
+.navigation > ul {
+  display: flex;
+}
+
+.navigation > ul > li {
+  margin-left: 30px;
+  list-style: none;
+}
+
+.navigation > h1 {
+  font-size: 1.4rem;
+}
+
+/* Highlight selected navigation option */
+.highlight {
+  padding:10px;
+  border-bottom: 2px solid #2e4756;
+}
+
+.mobile-navigation-active {
+  overflow: hidden;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+}
+
+/* Introduction Page */
+.intro-container {
+  display: flex;
+  text-align: center;
+}
+
+.profile-picture {
+  margin-top: 15vh;
+  margin-left: 18vw;
+}
+
+.intro-image {
+  border-radius: 100%;
+    margin-top: 0px;
+    border: solid;
+    border-width: 4px;
+    border-color: #439be2;
+    width: 47%;
+    margin-left: -5rem;
+}
+
+@keyframes displayIntroTop {
+  100% { transform: translate3d(0, -30%, 0); }
+  0% { transform: translate3d(0, 0, 0); }
+}
+@keyframes displayIntroBottom {
+  100% { transform: translate3d(0, 30%, 0); }
+  0% { transform: translate3d(0, 0, 0); }
+}
+
+.title {
+  height: 30%;
+  left: 30%;
+  position: relative;
+  transform: translate(-55%, -10%);
+  width: 45%;
+  margin-top: 15%;
+  text-align: left;
+}
+
+.seperator {
+  border-bottom: 2px solid;
+} 
+
+.helloText {
+  animation: displayIntroTop 1s;
+  animation-fill-mode:forwards;
+  bottom: 0;
+  margin-bottom: 0%;
+  line-height: 2rem;
+  color:  rgb(107 126 196);
+  font-size: 2rem;
+}
+
+.introBottom {
+  margin-top: 1%;
+  bottom: 5rem;
+  font-size: 1.15rem;
+}
+
+.introText {
+  animation: displayIntroBottom 1s;
+  animation-fill-mode:forwards;
+}
+
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.button:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+.resume {
+  margin-left: 0%;
+  margin-top: 10%;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.resume:hover {
+  background-color: #64B5F6;
+}
+
+blockquote {
+	font-weight: 100;
+	font-size: 1.1rem;
+	max-width: 50%;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+  margin-top: 5%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #2e4756;
+	font-size: 6rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+.contact-button {
+  margin-right: 20px;
+  padding: 8px;
+}
+
+.contact-button-image {
+  width: 30px;
+  height: 30px;
+}
+
+/*About me page*/
+.content-container > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vmin;
+}
+
+.content-container > section > .content{
+  width: 75%;
+  font-size: 1.25rem;
+  text-align: justify;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  padding: 80px;
+}
+
+.hobbiesTitle {
+  font-size: 2.5rem;
+  margin-top: -8%;
+}
+
+.content-container > section > .content-hobbies {
+  width: 75%;
+  font-size: 1.25rem;
+  text-align: justify;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  padding: 80px;
+  margin-top: -4rem;
+  height: 50%;
+}
+
+.scrollbottom {
+  width: 100px;
+  margin-left: 50%;
+  margin-top: 7%;
+  cursor: pointer;
+}
+
+.scrollImage {
+  transform: rotate(269deg);
+  width:50px;
+  height:50px;
+}
+
+.scrolltext {
+  width:50px;
+  font-size: 20px;
+}
+
+/* Hobbies Carousel */ 
+.aboutme-gallery {
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-gap: 5px;
+}
+
+.slidewrapper {
+  overflow: hidden;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.slideshow {
+  display: flex;
+  height: 100%;
+}
+
+.previous {
+  width:50px;
+  height:50px;
+  margin-right: 50px;
+  cursor: pointer;
+  margin-top: 15%;
+}
+
+.imageContainer {
+  width: 100%;
+  height:auto;
+  overflow:hidden;
+  text-align: center;
+}
+
+.imageContainer > img {
+  width: 90%;
+  object-fit: contain;
+  height: 100%;
+}
+
+.next {
+  width:50px;
+  height:50px;
+  transform: scaleX(-1);
+  margin-left: 50px;
+  cursor: pointer;
+  margin-top: 15%;
+}
+
+/*------------------------------------------------------------------------
+# Experience page content settings
+# .experience-section > .experience-contents > article > ul > li
+--------------------------------------------------------------------------*/
+/* placement attributes for the elements */
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+}
+.experience-section, .certification-section, .sap-video {
+  width: 78%;
+  height: auto;
+  margin-left: 11rem;
+  margin-right: 25rem;
+}
+
+.experience-section {
+  border-left: .25rem solid;
+}
+
+.experience-section > h6 {
+  display: none;
+}
+
+.experience-section > .experience-contents, .certification-section > .certification-contents {
+  font-size: 1.5rem;
+  width: auto;
+  height: auto;
+}
+
+.experience-section > .experience-contents {
+  margin-left: 1rem;
+  padding: 1%;
+}
+
+.experience-section > .experience-contents > article {
+  font-size: 1.5rem;
+  margin-left: 0.2rem;
+  box-shadow: 0 2px 6px 0 #cccccc;
+  background-color: #ffffff;
+}
+
+.experience-section > .experience-contents > article > h6 {
+  width: 76%;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin-bottom: 0rem;
+  margin: -1.3rem;
+  padding-left: .5rem;
+  padding-top: .2rem;
+  padding-bottom: .5rem;
+  margin-left: 0rem;
+}
+
+.experience-section > .experience-contents > article > .heading > .position-name, 
+.duration, .sap {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.experience-section > .experience-contents > article > ul {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  margin-left: 1rem;
+}
+
+.experience-section > .experience-contents > article > ul > li {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-left: -1rem;
+  margin-top: .5rem;
+}
+
+.padding-top {
+  margin-top:45px;
+}
+
+/* Configuration to create brown hollow circle besides experience timeline */
+.point {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -3.5rem;
+  margin-right: 2rem;
+  border: 4px solid brown;
+}
+
+/* Certification table settings */
+table {
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+th, td {
+  font-size: 1rem;
+  border: 1px solid black;
+  width: auto;
+  text-align: left;
+  padding: .65em;
+}
+
+.skills-section {
+  margin-bottom: 100px;
+}
+
+table > caption {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #2e4756;
+  font-weight: bold;
+}
+
+/* CSS feature for alternate colors on tables rows */
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+/* SAP video settings on Experience page */
+.sap-video > a > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1%;
+}
+
+
+/* Skills Container*/
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 0px;
+  row-gap: 20%;
+  align-items: stretch;
+}
+
+.skillsGrid section {
+  width: 85%;
+  height: 300px;
+  padding: 5px;
+}
+
+.skillGrid img {
+  float: left;
+}
+
+.skillsGrid section li {
+  background-color: white;
+  padding: 5px;
+  border-radius: 0px;
+  width: 100px;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+  border: 1px solid #eee;
+  list-style: none;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+}
+
+
+.skillsGrid h5 {
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+
+.skillsGrid li {
+  width: 300px;
+  height: 100px;
+}
+
+.skillsGrid li:hover {
+  -webkit-box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+.pgmLanguages, .operatingSys {
+  margin-left: 100px;
+}
+
+/* Projects */
+.academicContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.projectCard {
+  border-radius: 5px;
+  margin: 0;
+  margin-left: 14vw;
+  width: 75%;
+  box-shadow: 0 2px 6px 0 #cccccc;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.projectDescription {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.projectCardHeader {
+  cursor: pointer;
+}
+
+
+.projectCardContent {
+  padding: 15px;
+  text-align: justify;
+}
+
+.projectDesc {
+  width: 70%;
+  display: inline-grid;
+  vertical-align: top;
+  justify-content: center;
+}
+
+.projectImageContainer {
+  display: inline-grid;
+  vertical-align: middle;
+  margin-left: 6vw;
+}
+
+.projectSubtitle {
+  margin-top: 10px;
+  font-style: italic;
+  color: #9c9c9c;
+}
+
+.projectImage {
+  width: 10vw;
+}
+
+.hideCard {
+  display: none;
+}
+
+.expandCollapse {
+  float: right;
+}
+
+.expandImage, .collapseImage {
+  width:30px;
+}
+
+/* Testimonials */
+.testimonialsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.testimonial-card {
+  border-radius: 5px;
+  margin: 0;
+  margin-left: 13vw;
+  width: 75%;
+  box-shadow: 0 2px 6px 0 #cccccc;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.testimonial-card-content {
+  padding: 15px;
+  text-align: justify;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size:20px;
+  padding-top:10px;
+}
+
+.testimonial-author-position {
+  font-style: italic;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.t-card {
+  display: inline-grid;
+  vertical-align: top;
+  justify-content: center;
+  width: 70%;
+  margin-left: 1vw;
+  padding: 10px;
+}
+
+.t-card-picture {
+  display: inline-grid;
+  vertical-align: middle;
+  margin-left: 6vw;
+}
+
+.t-card-picture-man {
+  display: inline-grid;
+  vertical-align: middle;
+  margin-right: 5vw;
+  margin-left: 2vw;
+}
+
+.t-card-picture > img, .t-card-picture-man > img {
+  width: 10vw;
+}
+
+/*Contact*/
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  margin-left: 0px;
+  width: 90%;
+}
+
+.contactFormContainer {
+  margin-left: 25%;
+}
+
+.contactButtons {
+  margin-top: -1%;
+  padding-bottom: 5px;
+  margin-right: 14%;
+  text-align: right;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+.submit {
+background: #2196F3;
+margin: 0 auto;
+outline: 0;
+color: white;
+border: 0;
+padding: 12px 24px;
+border-radius: 4px;
+transition: all ease-in-out 0.1s;
+position: relative;
+display: inline-block;
+text-align: center;
+cursor: pointer;
+margin-top: 10px;
+}
+
+/* Style 'hover' property */
+.submit:hover {
+  background: #64B5F6;
+}
+
+.reset {
+  background: #d84a69;
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 30px;
+  }
+  
+/* Style 'hover' property */
+.reset:hover {
+  background: #f32121;
+}
+
+.contactText {
+  display: flex;
+  width:78%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top:30px;
+  background-color: rgb(121 144 225);
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
+
+.closeMessage {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 0px;
+}
+
+.error {
+  color: rgb(226, 95, 95);
+  padding-bottom: .5rem;
+}
+
+input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
+  border: 1px inset crimson;
+}
+
+.required {
+  color: rgb(204, 68, 68);
+}
+
+.hideSubmitMessage {
+  display: none
+}
+
+.showSubmitMessage {
+  display: all
+}
+
+/** Write Media Queries **/
+@media only screen and (max-width: 1007px) {
+  .navigation > ul {
+      position: fixed;
+      left: -200%;
+      top: 3rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      height:100%;
+      text-align: center;
+  }
+
+  .nav-menu.active {
+      left: 0;
+      z-index: 1;
+  }
+
+  .navigation > ul > li {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+      background-image: url('../images/hamburger.svg');
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+  }
+
+  .hamburger.active {
+    display: block;
+    background-image: url('../images/close.svg');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .profile-picture {
+    margin-top: 10vh;
+  }
+
+  .intro-image {
+    width: 70%;
+    margin-top: 0px;
+  }
+
+  .resume {
+    margin-left: -1%;
+    margin-top: 35%;
+  }
+
+  blockquote:before,
+  blockquote:after {
+    font-size: 3rem;
+  }
+
+  /*For about me*/
+  .content-container > section {
+    height: 100%;
+  }
+
+  .hobbiesTitle {
+    font-size: 1rem;
+  }
+
+  .content-container > section > .content{
+    font-size: 1.2rem;
+    width: 60%;
+  }
+
+  .content-container > section > .content-hobbies {
+    margin-top: 50px;
+    width: 60%;
+  }
+  .scrollbottom {
+    display: none;
+  }
+  
+  /* Rearrange elements on Experience page */
+  .experience-section, .certification-section, .sap-video {
+    width: 88%;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 25rem;
+  }
+
+  .experience-section > .experience-contents > article > h6 {
+    line-height: 1.5rem;
+    text-align: left;
+    width: 83%;
+  }
+
+  .experience-section > .experience-contents > article > .heading > .position-name,
+    .duration, .sap {
+    display: block;
+    margin-right: -1rem;
+  }
+
+  .point {
+    margin-left: -3.1rem;
+  }
+
+  .skills-section > .skills-contents {
+    margin-left: 2rem;
+  }
+
+  table {
+    width: 70%;
+  }
+
+  .sap-video #sapvideo {
+    width: 60%;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
+    gap: 0px;
+  }
+
+  .skillsGrid > section {
+    margin-left: 0px;
+    height: auto;
+  }
+
+  .previous, .next {
+    margin-top:7%;
+    width: 30px;
+    height: 30px;
+  }
+}
