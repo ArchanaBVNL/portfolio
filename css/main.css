@@ -773,7 +773,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   }
 
   .navigation > ul > li {
-      margin: 2rem ​0rem 1rem -3rem;
+      margin: 2rem 0px 1rem -3rem;
   }
 
   .hamburger {
