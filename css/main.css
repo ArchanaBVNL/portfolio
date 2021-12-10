@@ -899,6 +899,10 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     width: 20vw;
   }
 
+  .contactContainer {
+    padding-top: 80px;
+  }
+
   /* For 404 Error page */
   .errorContainer > img {
     width: 60vw;
