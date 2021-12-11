@@ -32,11 +32,11 @@
             <section class="experience-section" v-for="(exp, index) in experienceData">
                <div class="experience-contents">
                   <article>
-                     <h6 class="heading"><span class="point"></span>
+                     <div class="heading"><span class="point"></span>
                         <span class="position-name">{{ exp.experience.job }}</span>
                         <span class="duration">{{ exp.experience.duration }}</span>
                         <span class="sap"><a :href="exp.experience.link" target="_blank" aria-label="Link opens in a new tab or anchors to video">{{ exp.experience.organization }}</a></span>
-                     </h6>
+                     </div>
                      <ul v-if="exp.experience.points.length != 0">
                         <li v-for="point in exp.experience.points">
                            {{ point }}
