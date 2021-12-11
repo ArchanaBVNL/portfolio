@@ -334,9 +334,9 @@ blockquote {
   background-color: #ffffff;
 }
 
-.experience-section > .experience-contents > article > h6 {
+.experience-section > .experience-contents > article > .heading {
   width: 76%;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.5rem;
   margin-bottom: 0rem;
@@ -344,6 +344,7 @@ blockquote {
   padding-top: .2rem;
   padding-bottom: .5rem;
   margin-left: 0rem;
+  font-weight: bold;
 }
 
 .experience-section > .experience-contents > article > .heading > .position-name, 
@@ -849,7 +850,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     margin-right: 25rem;
   }
 
-  .experience-section > .experience-contents > article > h6 {
+  .experience-section > .experience-contents > article > .heading {
     line-height: 1.5rem;
     text-align: left;
     width: 83%;
