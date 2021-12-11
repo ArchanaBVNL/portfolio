@@ -835,6 +835,11 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   .scrollbottom {
     display: none;
   }
+
+  .slidewrapper {
+    width: 120%;
+    margin-left: -6vw;
+  }
   
   /* Rearrange elements on Experience page */
   .experience-section, .certification-section, .sap-video {
