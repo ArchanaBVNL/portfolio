@@ -43,20 +43,24 @@
 const getQuote = async () => {
     // get page elements to display quote and its author.
     const quote = document.querySelector("blockquote p");
-    const cite = document.querySelector("blockquote cite");
+    const em = document.querySelector("blockquote em");
 
     // if on Home Page then fetch and display quote.
-    if (quote != undefined && cite != undefined) {
+    if (quote != undefined && em != undefined) {
         try {
             // fetch random quote.
-            const response = await fetch("https://api.quotable.io/random");
+            const response = await fetch("https://api.quotable.io/random?maxLength=100");
             // quote is a json object containing - "content" & "author".
             const data = await response.json();
 
             // on success display quote and its author.
             if (response.ok) {
-                quote.textContent = data.content;
-                cite.textContent = data.author;
+                if(data.content != undefined && data.content != null) {
+                    quote.innerHTML = data.content;
+                }
+                if(data.author != undefined && data.author != null) {
+                    em.innerHTML = "-" + data.author;
+                }
             } else {
                 //do not display quotation mark if fetch fails to return a quote.
                 document.querySelector("blockquote").remove();
