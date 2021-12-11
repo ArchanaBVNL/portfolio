@@ -81,7 +81,7 @@ a:hover {
 }
 
 .profile-picture {
-  margin-top: 20vh;
+  margin-top: 19vh;
   margin-left: 18vw;
 }
 
@@ -106,7 +106,7 @@ a:hover {
 
 .title {
   height: 30%;
-  left: 30%;
+  left: 36%;
   position: relative;
   transform: translate(-55%, -10%);
   width: 45%;
@@ -166,7 +166,9 @@ a:hover {
 .resume:hover {
   background-color: #64B5F6;
 }
-
+.quote {
+  color: #6b3982;
+}
 blockquote {
 	font-weight: 100;
 	font-size: 1.1rem;
@@ -175,30 +177,9 @@ blockquote {
 	position: relative;
 	margin: 0;
 	padding: .5rem;
-  margin-top: 5%;
+  margin-top: 8%;
   margin-left: 25%;
   text-align: center;
-}
-
-blockquote:before,
-blockquote:after {
-	position: absolute;
-	color: #2e4756;
-	font-size: 6rem;
-	width: 4rem;
-	height: 4rem;
-}
-
-blockquote:before {
-	content: '“';
-	left: -5rem;
-	top: -2rem;
-}
-
-blockquote:after {
-	content: '”';
-	right: -5rem;
-	bottom: 1rem;
 }
 
 .contact-button {
@@ -319,6 +300,7 @@ blockquote:after {
 .experienceContainer {
     display: flex;
     flex-direction: column;
+    padding-top: 65px;
 }
 .experience-section, .certification-section, .sap-video {
   width: 78%;
@@ -344,6 +326,7 @@ blockquote:after {
 .experience-section > .experience-contents {
   margin-left: 1rem;
   padding: 1%;
+  padding-top: 0;
 }
 
 .experience-section > .experience-contents > article {
@@ -359,7 +342,6 @@ blockquote:after {
   letter-spacing: 1px;
   line-height: 1.5rem;
   margin-bottom: 0rem;
-  margin: -1.3rem;
   padding-left: .5rem;
   padding-top: .2rem;
   padding-bottom: .5rem;
@@ -373,7 +355,7 @@ blockquote:after {
 }
 
 .experience-section > .experience-contents > article > ul {
-  padding-top: 1rem;
+  padding-top: 0rem;
   padding-bottom: .5rem;
   margin-left: 1rem;
 }
@@ -390,6 +372,9 @@ blockquote:after {
   margin-top:45px;
 }
 
+#sapvideo {
+  height: 40%;
+}
 /* Configuration to create brown hollow circle besides experience timeline */
 .point {
   height: 20px;
@@ -438,12 +423,15 @@ tr:nth-child(even) {
 }
 
 /* SAP video settings on Experience page */
-.sap-video > a > img {
+#sap-video {
+  height: 40%;
+}
+
+.e-img {
   width: 30px;
   height: 30px;
   margin-right: 1%;
 }
-
 
 /* Skills Container*/
 .skillsContainer {
@@ -754,6 +742,9 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   display: all
 }
 
+.margin-bottom {
+  margin-bottom: 10px;
+}
 /** Write Media Queries **/
 @media only screen and (max-width: 1007px) {
   .navigation > ul {
@@ -773,7 +764,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   }
 
   .navigation > ul > li {
-      margin: 2rem 0px 1rem -3rem;
+      margin: 2rem ​0px 1rem -3rem;
   }
 
   .hamburger {
@@ -797,6 +788,10 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     margin-top: 10vh;
   }
 
+  .title {
+    left: 30%;
+  }
+  
   .intro-image {
     width: 70%;
     margin-top: 0px;
@@ -809,8 +804,9 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
 
   blockquote {
     font-size: 1rem;
+    margin-top: 5%;
   }
-  
+
   blockquote:before,
   blockquote:after {
     font-size: 2rem;
@@ -867,11 +863,11 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   }
 
   table {
-    width: 70%;
+    width: 80%;
   }
 
-  .sap-video #sapvideo {
-    width: 60%;
+  #sapvideo {
+    height: 40vw;
   }
 
   .skillsGrid {
@@ -902,7 +898,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   .contactContainer {
     padding-top: 80px;
   }
-
+  
   /* For 404 Error page */
   .errorContainer > img {
     width: 60vw;
