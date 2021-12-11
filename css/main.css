@@ -907,3 +907,16 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
     height: 60vw;
   }
 }
+
+/* Media Queries for Print Preview */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; /* For Chrome */
+    color-adjust: exact; /* For Firefox */
+  }
+
+  /* Hide SAP Video for Print Preview */
+  .sap-video {
+    display: none;
+  }
+}
