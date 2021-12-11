@@ -373,7 +373,8 @@ blockquote {
 }
 
 #sapvideo {
-  height: 40%;
+  width: 50%;
+  height: 50%;
 }
 /* Configuration to create brown hollow circle besides experience timeline */
 .point {
@@ -791,7 +792,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   .title {
     left: 30%;
   }
-  
+
   .intro-image {
     width: 70%;
     margin-top: 0px;
@@ -867,6 +868,7 @@ input[type=text].errorBox, input[type=email].errorBox, textarea.errorBox {
   }
 
   #sapvideo {
+    width: 40vw;
     height: 40vw;
   }
 
