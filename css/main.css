@@ -472,9 +472,11 @@ tr:nth-child(even) {
 }
 
 
-.skillsGrid h5 {
+.skillCategory {
   padding-left: 5px;
   font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 25px;
 }
 
 
