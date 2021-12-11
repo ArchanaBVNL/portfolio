@@ -191,6 +191,7 @@ const previousImage = (hobbyImages) => {
     // get reset and close message elements of Contact page
     const resetBtn = document.getElementById('resetBtn');
     const closeMessage = document.getElementById('closeMessage');
+    const hideConfirmationMessage = document.getElementById("hideConfirmation");
 
     // if reset button on contact page is clicked then clear all contents of the form
     if (resetBtn != undefined) {
@@ -199,6 +200,11 @@ const previousImage = (hobbyImages) => {
             emailError.textContent = '';
             msgError.textContent = '';
 
+            // Hide confirmation message, if being showed.
+            if(hideConfirmationMessage != undefined) {
+                hideConfirmationMessage.classList.remove('showSubmitMessage')
+                hideConfirmationMessage.classList.add('hideSubmitMessage')
+            }
             // Also, remove the user full name and email from the local storage
             clearLocalStorage();
         })
@@ -208,8 +214,8 @@ const previousImage = (hobbyImages) => {
     // Also, hide the email confirmation message displayed on screen
     if (closeMessage != undefined) {
         closeMessage.addEventListener('click', (e) => {
-            document.getElementById("hideConfirmation").classList.remove('showSubmitMessage')
-            document.getElementById("hideConfirmation").classList.add('hideSubmitMessage')
+            hideConfirmationMessage.classList.remove('showSubmitMessage')
+            hideConfirmationMessage.classList.add('hideSubmitMessage')
             fullName.value = '';
             email.value = '';
             message.value = '';
