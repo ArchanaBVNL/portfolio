@@ -2,17 +2,17 @@
 	"myCertification": [{
 		"certificate": {
 			"year": "2017",
-			"certification": "Introduction to SAP HANA Administration",
+			"certification": "Introduction to SAP HANA Administration"
 		}
 	}, {
 		"certificate": {
 			"year": "2017",
-			"certification": "Managing ABAP Systems on SAP Netweaver",
+			"certification": "Managing ABAP Systems on SAP Netweaver"
 		}
 	}, {
 		"certificate": {
 			"year": "2013",
-			"certification": "SAP Certified Technology Associate",
+			"certification": "SAP Certified Technology Associate"
 		}
 	}]
 }
