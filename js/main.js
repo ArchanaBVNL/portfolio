@@ -82,7 +82,7 @@ const getQuote = async () => {
     // if on Home page then on click of Resume open resume.pdf.
     if (btnResume != undefined) {
         btnResume.addEventListener('click', () => {
-            window.open('https://archanab.me/resume.pdf', '_blank');
+            window.open('https://archanab.me/archanabhogaraju.pdf', '_blank');
         });
     }
 
