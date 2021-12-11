@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color:#2271da;
+  color:#336bb4;
   text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ a:hover {
   list-style: none;
 }
 
-.navigation > h1 {
+.navigation > a > h1 {
   font-size: 1.4rem;
 }
 
