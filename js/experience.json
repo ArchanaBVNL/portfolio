@@ -1,0 +1,35 @@
+{
+	"myExperience": [{
+		"experience": {
+			"job": "MS Software Development",
+			"duration": "December 2020 - May 2022 (expected)",
+			"organization": "Boston University MET",
+			"link": "https://www.bu.edu/met/",
+			"points": [],
+		}
+	}, {
+		"experience": {
+			"job": "Certified SAP Basis Adminstrator",
+			"duration": "November 2013",
+			"organization": "SAP",
+			"link": "https://training.sap.com/content/sap-technology-system-administration",
+			"points": [],
+		}
+	}, {
+		"experience": {
+			"job": "Sr Software Engineer",
+			"duration": "January 2009 - December 2010",
+			"organization": "SAP Labs India",
+			"link": "#sapvideo",
+			"points": ["User Administration: creating and managing user and their Roles and Authorization using PFCG.", "Application of Support Packs and SAP Notes.", "Conceptual idea of SAP Basis Administration - JAVA and Dual Stack Systems", "Conceptual idea of Netweaver administration tools such as Configtool, Visual Admin, SDM and JSPM.", "High quality CSN processing for complete customer satisfaction", "Training and mentoring of team members especially new hires", "Contributed in completion of ~ 100 system upgrades for Business Suite 2009 to NW 702 by proactively coordinating tasks and reporting status.", "Provided reliable and fast support for our customers NW EhP, ERP EhP, ByD, AP, etc in the form of scheduled tasks, CSNs, phone calls and mails.", "Worked on advance transport management configuration for NW codelines under development.", "Developed beta version of “System Information Tool”, a team specific tool which helps speed up processing time using Perl script.", "Ensure high quality execution & on-time delivery. Extended activity coordination, delegation & reporting."],
+		}
+		}, {
+		"experience": {
+			"job": "Certified SAP Basis Adminstrator",
+			"duration": "November 2013",
+			"organization": "SAP",
+			"link": "https://training.sap.com/content/sap-technology-system-administration",
+			"points": ["System Landscape Management: Planning, Setup and Maintenance of Transport Management system.", "Operation modes: configuration & switching.", "Background Job Scheduling, Monitoring and Analyzing Logs.", "Client copy - local, remote and export/import and client maintenance.", "Transport Management: Pre-imports and Cross-transport execution and monitoring at OS level.", "Regular ABAP Kernel Upgrades.", "Worked on ABAP Language Transports.", "Beginning as fresh graduate with designation as 'Software Engineer' my daily tasks included - ABAP kernel upgrades, Transport Imports scheduling and monitoring, Kernel swaps on demand, System setup and STMS configuration, and Client export and import."],
+		}
+	}]
+}
