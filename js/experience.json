@@ -25,10 +25,10 @@
 		}
 	}, {
 		"experience": {
-			"job": "Certified SAP Basis Adminstrator",
-			"duration": "November 2013",
-			"organization": "SAP",
-			"link": "https://training.sap.com/content/sap-technology-system-administration",
+			"job": "Software Engineer",
+			"duration": "March 2006 - December 2008",
+			"organization": "SAP Labs India",
+			"link": "#sapvideo",
 			"points": ["System Landscape Management: Planning, Setup and Maintenance of Transport Management system.", "Operation modes: configuration & switching.", "Background Job Scheduling, Monitoring and Analyzing Logs.", "Client copy - local, remote and export/import and client maintenance.", "Transport Management: Pre-imports and Cross-transport execution and monitoring at OS level.", "Regular ABAP Kernel Upgrades.", "Worked on ABAP Language Transports.", "Beginning as fresh graduate with designation as 'Software Engineer' my daily tasks included - ABAP kernel upgrades, Transport Imports scheduling and monitoring, Kernel swaps on demand, System setup and STMS configuration, and Client export and import."]
 		}
 	}]
