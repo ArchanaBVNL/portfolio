@@ -12,7 +12,7 @@
 
 <body>
 	<header class="header">
-		<nav class="navigation" role="navigation">
+		<nav class="navigation">
 			<h1>Archana Bhogaraju</h1>
 			<ul class="nav-menu">
 				<li><a href="index.html">Home</a></li>
@@ -28,39 +28,42 @@
 	</header>
 	<div id="app">
 		<template>
-		<div class="academicContainer">
-			<section class="projectCard" v-for="(proj, index) in info">
-				<article class="projectCardContent">
-					<div class="projectCardHeader" @click="proj.project.show = !proj.project.show">
-						<strong>{{ proj.project.title }}</strong>
-						<span class="expandCollapse">
-							<img v-if="!proj.project.show" src="images/plus.svg" class="expandImage" alt="Expand Card">
-							<img v-if="proj.project.show" src="images/minus.svg"  class="collapseImage" alt="Collapse Card">
-						</span>
-						<div class="projectSubtitle"><span class="course">Course:</span>{{ proj.project.course }}</div>
-					</div>
-					<div class="projectCardText" :class="{ hideCard: !proj.project.show }">
-						<div class="projectDesc">
-							<div class="projectDescription">
-								{{ proj.project.description }}
-							</div>
-							<div class="projectTechnologies">
-								<strong>Technologies</strong> 
-								<ul>
-									<li v-for="desc in proj.project.technologies">
-										{{ desc }}
-									</li>
-								</ul>
+			<div class="academicContainer">
+				<section class="projectCard" v-for="(proj, index) in info">
+					<article class="projectCardContent">
+						<div class="projectCardHeader" @click="proj.project.show = !proj.project.show">
+							<strong>{{ proj.project.title }}</strong>
+							<span class="expandCollapse">
+								<img v-if="!proj.project.show" src="images/plus.svg" class="expandImage"
+									alt="Expand Card">
+								<img v-if="proj.project.show" src="images/minus.svg" class="collapseImage"
+									alt="Collapse Card">
+							</span>
+							<div class="projectSubtitle"><span class="course">Course:</span>{{ proj.project.course }}
 							</div>
 						</div>
-						<div class="projectImageContainer">
-							<img :src="proj.project.image" alt="Project" class="projectImage">
+						<div class="projectCardText" :class="{ hideCard: !proj.project.show }">
+							<div class="projectDesc">
+								<div class="projectDescription">
+									{{ proj.project.description }}
+								</div>
+								<div class="projectTechnologies">
+									<strong>Technologies</strong>
+									<ul>
+										<li v-for="desc in proj.project.technologies">
+											{{ desc }}
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="projectImageContainer">
+								<img :src="proj.project.image" alt="Project" class="projectImage">
+							</div>
 						</div>
 					</article>
 				</section>
 			</div>
 		</template>
-		</div>
 	</div>
 	<!--Include Vue-->
 	<script src="https://archanab.me/js/vue.js"></script>
