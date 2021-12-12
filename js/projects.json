@@ -22,7 +22,7 @@
 			"title": "Sudoku Assistant",
 			"course": "Information Structures with Python",
 			"description": "Sudoku Assistant is built to help solve any valid Sudoku puzzle entered as an input. A game board input is first validated and then the software finds a solution to display the final solution to the user. The GUI was built using pygame, a Python game module.",
-			"technologies": ["Python", "Pycharm"],
+			"technologies": ["Python", "PyCharm"],
 			"image": "./images/sudoku.svg",
 			"show": false
 		}
