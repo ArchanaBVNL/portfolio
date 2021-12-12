@@ -398,12 +398,10 @@ const validateFullName = (fullName, error) => {
     if (fullName.value.length < 2) {
         errorMessage = "Please enter a Name with at least two letters.";
         error.textContent = errorMessage;
-        fullName.focus()
         return false;
     } else if (!fullName.value.match(namePattern)) {
         errorMessage = "Please enter only alphabets in name.";
         error.textContent = errorMessage;
-        fullName.focus()
         return false;
     } else {
         fullName.classList.remove("error");
@@ -421,9 +419,8 @@ const validateEmail = (email, error) => {
     let errorMessage = "";
     let emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if (!email.value.match(emailPattern)) {
-        errorMessage = "Please enter a vaild email id.";
+        errorMessage = "Please enter a valid email id.";
         error.textContent = errorMessage;
-        email.focus()
         return false;
     } else {
         error.textContent = "";
@@ -441,7 +438,6 @@ const validateMessage = (message, error) => {
     if (message.value.length < 2) {
         errorMessage = "Please enter a message of at least two characters length.";
         error.textContent = errorMessage;
-        message.focus()
         return false;
     } else {
         message.classList.remove("error");
@@ -456,7 +452,7 @@ const validateMessage = (message, error) => {
 
 const appP = document.getElementById('appProjects')
 if (appP != undefined) {
-const appProjects = new Vue({
+   var appProjects = new Vue({
     el: '#appProjects',
     data: {
         info: ''
@@ -495,7 +491,7 @@ const appProjects = new Vue({
 */
 const appE = document.getElementById('appExperience')
 if (appE != undefined) {
-const appExperience = new Vue({
+var appExperience = new Vue({
     el: '#appExperience',
     data: {
         // page information
