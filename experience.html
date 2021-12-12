@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Archana Bhogaraju - Experience</title>
    <link href="css/main.css" rel="stylesheet" type="text/css">
+   <script src="https://archanab.me/js/vue.js" defer></script>
    <script src="js/main.js" defer></script>
 </head>
 
@@ -26,7 +27,7 @@
          <div class="hamburger"></div>
       </nav>
    </header>
-   <div id="app">
+   <div id="appExperience">
       <template>
          <div class="experienceContainer">
             <section class="experience-section" v-for="(exp, index) in experienceData">
@@ -70,66 +71,5 @@
          </div>
       </template>
    </div>
-   <!--Include Vue-->
-   <script src="https://archanab.me/js/vue.js"></script>
-
-   <script>
-      var app = new Vue({
-         el: '#app',
-         data: {
-            experienceData: '',
-            certificateData: '',
-            tableTitle: "Certifications",
-            tableHeader1: "Year",
-            tableHeader2: "Certification",
-            sapVideoTitle: "Want to know about SAP?",
-            sapVideoLink: "https://d.dam.sap.com/m/3fqfxMD?vw=ys",
-            upArrow: "images/up.svg",
-         },
-         methods: {
-
-            getExperienceInfo: async function (url) {
-               await fetch(url)
-                  .then((response) => {
-                     if (response.status == 200) {
-                        return response.json()
-                     } else {
-                        throw new Error(
-                           'An exception occurred while trying to fetch Experience Information!'
-                        )
-                     }
-                  })
-                  .then((data) => {
-                     this.experienceData = (JSON.parse(JSON.stringify(data))).myExperience
-                  })
-                  .catch((error) => {
-                     'An exception occurred while trying to fetch Experience Information!'
-                  })
-            },
-            getCertificationInfo: async function (url) {
-               await fetch(url)
-                  .then((response) => {
-                     if (response.status == 200) {
-                        return response.json()
-                     } else {
-                        throw new Error(
-                           'An exception occurred while trying to fetch Certification Information!'
-                        )
-                     }
-                  })
-                  .then((data) => {
-                     this.certificateData = (JSON.parse(JSON.stringify(data))).myCertification
-                  })
-                  .catch((error) => {
-                     'An exception occurred while trying to fetch Certification Information!'
-                  })
-            },
-         },
-         created: function () {
-            this.getExperienceInfo('https://archanab.me/js/experience.json')
-            this.getCertificationInfo('https://archanab.me/js/certification.json')
-         },
-      });
-   </script>
 </body>
 </html>
