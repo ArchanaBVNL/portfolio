@@ -12,7 +12,7 @@
 
 <body>
 	<header class="header">
-		<nav class="navigation" role="navigation">
+		<nav class="navigation">
 			<h1>Archana Bhogaraju</h1>
 			<ul class="nav-menu">
 				<li><a href="index.html">Home</a></li>
@@ -27,7 +27,7 @@
 		</nav>
 	</header>
 	<div class="contactContainer">
-		<section class="contactButtons">
+		<div class="contactButtons">
 			<div>
 				<button id="btnLinkedin" class="button contact-button">
 					<img src="images/linkedin.svg" class="contact-button-image" alt="LinkedIn" />
@@ -39,11 +39,11 @@
 					<img src="images/email.svg" class="contact-button-image" alt="Email" />
 				</button>
 			</div>
-		</section>
+		</div>
 		<div class="contactFormContainer">
 			<form name="contactForm" id="contactForm" method="post" action="#" novalidate>
 				<label for="fullName">Full Name <span class="required">*</span></label> <br>
-				<input id="fullName" type="text" name="fullName" required placeholder="John Doe" autocomplete=" off">
+				<input id="fullName" type="text" name="fullName" required placeholder="John Doe" autocomplete="off">
 				<div class="error" id="nameError"></div>
 				<label for="email">Email <span class="required">*</span></label><br>
 				<input id="email" type="email" name="email" required placeholder="johndoe@gmail.com" autocomplete="off">
@@ -60,7 +60,8 @@
 					<span>
 						<strong>Thank you for contacting me!</strong>
 					</span>
-					<span><img src="images/circle-close.svg" id="closeMessage" class="closeMessage" alt="icon to close"></span>
+					<span><img src="images/circle-close.svg" id="closeMessage" class="closeMessage"
+							alt="icon to close"></span>
 				</div>
 			</div>
 		</div>
