@@ -456,7 +456,7 @@ const validateMessage = (message, error) => {
 
 const appP = document.getElementById('appProjects')
 if (appP != undefined) {
-return(new Vue({
+const appProjects = new Vue({
     el: '#appProjects',
     data: {
         info: ''
@@ -487,7 +487,7 @@ return(new Vue({
         // method to fetch projects data.
         this.getProjectInfo('https://archanab.me/js/projects.json')
     },
-}))
+})
 }
 
 /* 
@@ -495,7 +495,7 @@ return(new Vue({
 */
 const appE = document.getElementById('appExperience')
 if (appE != undefined) {
-return( new Vue({
+const appExperience = new Vue({
     el: '#appExperience',
     data: {
         // page information
@@ -556,5 +556,5 @@ return( new Vue({
         this.getExperienceInfo('https://archanab.me/js/experience.json')
         this.getCertificationInfo('https://archanab.me/js/certification.json')
     },
-}))
+})
 }
