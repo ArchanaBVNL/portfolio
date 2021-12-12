@@ -1,0 +1,23 @@
+{
+	"mySkills": [{
+		"skill": {
+			"image": ["images/skills/c.svg", "images/skills/cplus.svg", "images/skills/java.svg", "images/skills/python.svg", "images/skills/html.svg", "images/skills/css.svg", "images/skills/js.svg", "images/skills/vue.svg"],
+			"caption": ["C", "C++", "Java", "Python", "HTML", "CSS", "Java Script", "Vue"]
+		}
+	}, {
+		"skill": {
+			"image": ["images/skills/office.svg", "images/skills/intellij.svg", "images/skills/pycharm.svg", "images/skills/vscode.svg", "images/skills/sap.png", "images/skills/git.svg"],
+			"caption": ["MS Office", "IntelliJ", "PyCharm", "VS Code", "SAP", "GIT"]
+		}
+	}, {
+		"skill": {
+			"image": ["images/skills/windows.svg", "images/skills/linux.png", "images/skills/apple.svg"],
+			"caption": ["Windows", "Linux", "Mac OS"]
+		} 
+	}, {
+		"skill": {
+			"image": ["images/skills/oracle.png"],
+			"caption": ["Oracle"]
+		}
+	}]
+}
