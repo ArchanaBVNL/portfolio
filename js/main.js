@@ -55,10 +55,10 @@ const getQuote = async () => {
 
             // on success display quote and its author.
             if (response.ok) {
-                if(data.content != undefined && data.content != null) {
+                if (data.content != undefined && data.content != null) {
                     quote.innerHTML = data.content;
                 }
-                if(data.author != undefined && data.author != null) {
+                if (data.author != undefined && data.author != null) {
                     em.innerHTML = "-" + data.author;
                 }
             } else {
@@ -67,7 +67,7 @@ const getQuote = async () => {
             }
         }
         catch (e) {
-             //do not display quotation mark on error.
+            //do not display quotation mark on error.
             document.querySelector("blockquote").remove();
         }
     }
@@ -104,7 +104,7 @@ const getQuote = async () => {
     const prevImage = document.getElementById('previousImage')
     // get nxtImage icon element.
     const nxtImage = document.getElementById('nextImage')
-    // intialize hobby images list.
+    // initialize hobby images list.
     const hobbyImages = [
         "images/hobbies/adventure.svg",
         "images/hobbies/cooking.svg",
@@ -169,7 +169,7 @@ const previousImage = (hobbyImages) => {
     // get the index of current image.
     let index = hobbyImages.indexOf(image_path);
 
-     // if current image is first image then display last image on list.
+    // if current image is first image then display last image on list.
     // else display previous image on list.
     if (index == 0) {
         image.src = hobbyImages[hobbyImages.length - 1];
@@ -201,7 +201,7 @@ const previousImage = (hobbyImages) => {
             msgError.textContent = '';
 
             // Hide confirmation message, if being showed.
-            if(hideConfirmationMessage != undefined) {
+            if (hideConfirmationMessage != undefined) {
                 hideConfirmationMessage.classList.remove('showSubmitMessage')
                 hideConfirmationMessage.classList.add('hideSubmitMessage')
             }
@@ -231,7 +231,7 @@ const previousImage = (hobbyImages) => {
     const btnLinkedIn = document.getElementById("btnLinkedin");
     const btnTwitter = document.getElementById("btnTwitter");
     const btnEmail = document.getElementById("btnEmail");
-    
+
     // LinkedIn: on click open linkedIn profile in new page.
     if (btnLinkedIn != undefined) {
         btnLinkedIn.addEventListener('click', () => {
@@ -320,7 +320,7 @@ const getLocalStorage = () => {
     // call method get user name and email from local storage.
     const contactDetails = getLocalStorage();
 
-    // found then intialize the contact form input fields.
+    // found then initialize the contact form input fields.
     if (contactDetails != undefined && contactDetails != null) {
         fullName.value = contactDetails.name;
         email.value = contactDetails.email;
@@ -450,3 +450,104 @@ const validateMessage = (message, error) => {
     }
 };
 
+/* 
+- Projects Page: Vue.js
+*/
+const appProjects = new Vue({
+    el: '#appProjects',
+    data: {
+        info: ''
+    },
+    methods: {
+        getProjectInfo: async function (url) {
+            await fetch(url)
+                // if project json is found then get data.
+                .then((response) => {
+                    if (response.status == 200) {
+                        return response.json()
+                    } else {
+                        throw new Error(
+                            'An exception occurred while trying to fetch Degree Information!'
+                        )
+                    }
+                })
+                .then((data) => {
+                    // fetch projects information from json file.
+                    this.info = (JSON.parse(JSON.stringify(data))).myProjects;
+                })
+                .catch((error) => {
+                    'An exception occurred while trying to fetch Degree Information!'
+                })
+        },
+    },
+    created: function () {
+        // method to fetch projects data.
+        this.getProjectInfo('https://archanab.me/js/projects.json')
+    },
+});
+
+/* 
+- Experience Page: Vue.js
+*/
+var appExperience = new Vue({
+    el: '#appExperience',
+    data: {
+        // page information
+        experienceData: '',
+        certificateData: '',
+        tableTitle: "Certifications",
+        tableHeader1: "Year",
+        tableHeader2: "Certification",
+        sapVideoTitle: "Want to know about SAP?",
+        sapVideoLink: "https://d.dam.sap.com/m/3fqfxMD?vw=ys",
+        upArrow: "images/up.svg",
+    },
+    methods: {
+
+        getExperienceInfo: async function (url) {
+            await fetch(url)
+                // if experience json is found then get data.
+                .then((response) => {
+                    if (response.status == 200) {
+                        return response.json()
+                    } else {
+                        throw new Error(
+                            'An exception occurred while trying to fetch Experience Information!'
+                        )
+                    }
+                })
+                .then((data) => {
+                    // fetch experience information from json file.
+                    this.experienceData = (JSON.parse(JSON.stringify(data))).myExperience
+                })
+                .catch((error) => {
+                    'An exception occurred while trying to fetch Experience Information!'
+                })
+        },
+        getCertificationInfo: async function (url) {
+            await fetch(url)
+                // if certification json is found then get data.
+                .then((response) => {
+                    if (response.status == 200) {
+                        return response.json()
+                    } else {
+                        throw new Error(
+                            'An exception occurred while trying to fetch Certification Information!'
+                        )
+                    }
+                })
+                .then((data) => {
+                    // fetch certification information from json file.
+                    this.certificateData = (JSON.parse(JSON.stringify(data))).myCertification
+                })
+                .catch((error) => {
+                    'An exception occurred while trying to fetch Certification Information!'
+                })
+        },
+    },
+    created: function () {
+        // methods to fetch experience data and certification data
+        this.getExperienceInfo('https://archanab.me/js/experience.json')
+        this.getCertificationInfo('https://archanab.me/js/certification.json')
+    },
+});
