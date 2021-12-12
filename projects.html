@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Archana Bhogaraju - Projects</title>
 	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<script src="js/vue.js" defer></script>
 	<script src="js/main.js" defer></script>
 </head>
 
@@ -26,7 +27,7 @@
 			<div class="hamburger"></div>
 		</nav>
 	</header>
-	<div id="app">
+	<div id="appProjects">
 		<template>
 			<div class="academicContainer">
 				<section class="projectCard" v-for="(proj, index) in info">
@@ -66,40 +67,5 @@
 		</template>
 	</div>
 	<!--Include Vue-->
-	<script src="https://archanab.me/js/vue.js"></script>
-	<script>
-		var app = new Vue({
-			el: '#app',
-			data: {
-				info: ''
-			},
-			methods: {
-				getProjectInfo: async function (url) {
-					let responseClone
-					await fetch(url)
-						.then((response) => {
-							responseClone = response
-							if (response.status == 200) {
-								return response.json()
-							} else {
-								throw new Error(
-									'An exception occurred while trying to fetch Degree Information!',
-								)
-							}
-						})
-						.then((data) => {
-							this.info = (JSON.parse(JSON.stringify(data))).myProjects;
-						})
-						.catch((error) => {
-							console.log(error);
-						})
-				},
-			},
-			created: function () {
-				this.getProjectInfo('https://archanab.me/js/projects.json')
-			},
-		});
-	</script>
 </body>
-
 </html>
