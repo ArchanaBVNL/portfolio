@@ -398,10 +398,12 @@ const validateFullName = (fullName, error) => {
     if (fullName.value.length < 2) {
         errorMessage = "Please enter a Name with at least two letters.";
         error.textContent = errorMessage;
+        fullName.focus()
         return false;
     } else if (!fullName.value.match(namePattern)) {
         errorMessage = "Please enter only alphabets in name.";
         error.textContent = errorMessage;
+        fullName.focus()
         return false;
     } else {
         fullName.classList.remove("error");
@@ -421,6 +423,7 @@ const validateEmail = (email, error) => {
     if (!email.value.match(emailPattern)) {
         errorMessage = "Please enter a vaild email id.";
         error.textContent = errorMessage;
+        email.focus()
         return false;
     } else {
         error.textContent = "";
@@ -438,6 +441,7 @@ const validateMessage = (message, error) => {
     if (message.value.length < 2) {
         errorMessage = "Please enter a message of at least two characters length.";
         error.textContent = errorMessage;
+        message.focus()
         return false;
     } else {
         message.classList.remove("error");
@@ -449,7 +453,10 @@ const validateMessage = (message, error) => {
 /* 
 - Projects Page: Vue.js
 */
-const appProjects = new Vue({
+
+const appP = document.getElementById('appProjects')
+if (appP != undefined) {
+return(new Vue({
     el: '#appProjects',
     data: {
         info: ''
@@ -480,12 +487,15 @@ const appProjects = new Vue({
         // method to fetch projects data.
         this.getProjectInfo('https://archanab.me/js/projects.json')
     },
-});
+}))
+}
 
 /* 
 - Experience Page: Vue.js
 */
-const appExperience = new Vue({
+const appE = document.getElementById('appExperience')
+if (appE != undefined) {
+return( new Vue({
     el: '#appExperience',
     data: {
         // page information
@@ -546,4 +556,5 @@ const appExperience = new Vue({
         this.getExperienceInfo('https://archanab.me/js/experience.json')
         this.getCertificationInfo('https://archanab.me/js/certification.json')
     },
-});
+}))
+}
