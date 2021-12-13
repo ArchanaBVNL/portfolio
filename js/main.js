@@ -439,6 +439,10 @@ const validateMessage = (message, error) => {
         errorMessage = "Please enter a message of at least two characters length.";
         error.textContent = errorMessage;
         return false;
+    } else if (message.value.length > 200) {
+        errorMessage = "Please enter a message less than 200 characters in length.";
+        error.textContent = errorMessage;
+        return false;
     } else {
         message.classList.remove("error");
         error.textContent = "";
