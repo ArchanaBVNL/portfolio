@@ -1,7 +1,6 @@
 # MET CS601 O2 Term Project - "My Portfolio"
 
-#### Author: Archana Bhogaraju Venkata Naga Lakshmi
-#### Class: MET CS601 O2 </h4>
+#### Author: Archana Bhogaraju
 #### Date: 12/13/2021 </h4>
 
 ## Description
