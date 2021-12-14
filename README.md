@@ -40,6 +40,8 @@ The goal of this term project is to build a portfolio website. The website inclu
     * The form is built using CSS.
     * The form validation is done using Java Script.
     * Local storage is used to store and retrieve the last user's full name and email.
+* Error Page - Handles 404, Page not found errors. 
+    * Redirects the user to 404.html in case a web page is not found in the website.
 
 ## Accessibility Features
 * Added aria labels where required to make sure the code has better accessibility support.
@@ -51,8 +53,4 @@ The goal of this term project is to build a portfolio website. The website inclu
 * HTML Validator - https://validator.w3.org/
 * CSS Validator - https://jigsaw.w3.org/css-validator/
 * Web Accessibility Evaluator - https://wave.webaim.org/
-
-
-
-
 
