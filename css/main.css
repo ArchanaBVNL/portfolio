@@ -142,6 +142,7 @@ a:hover {
 .introText {
   animation: displayIntroBottom 1s;
   animation-fill-mode:forwards;
+  min-width: 20rem;
 }
 
 /* index.html resume button settings */
