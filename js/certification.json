@@ -1,18 +1,43 @@
 {
 	"myCertification": [{
 		"certificate": {
-			"year": "2017",
-			"certification": "Introduction to SAP HANA Administration"
+			"year": "Fall 2020",
+			"certification": "Information Structures with Python"
 		}
 	}, {
 		"certificate": {
-			"year": "2017",
-			"certification": "Managing ABAP Systems on SAP Netweaver"
+			"year": "Spring 2021",
+			"certification": "Data Structures and Algorithms"
 		}
 	}, {
 		"certificate": {
-			"year": "2013",
-			"certification": "SAP Certified Technology Associate"
+			"year": "Spring 2021",
+			"certification": "Information Systems Analysis and Design"
+		}
+	}, {
+		"certificate": {
+			"year": "Summer 2021",
+			"certification": "Advanced Programming Techniques"
+		}
+	}, {
+		"certificate": {
+			"year": "Summer 2021",
+			"certification": "Software Design and Patterns"
+		}
+	}, {
+		"certificate": {
+			"year": "Fall 2021",
+			"certification": "Web Application Development"
+		}
+	}, {
+		"certificate": {
+			"year": "Spring 2022",
+			"certification": "Server-Side Web Development"
+		}
+	}, {
+		"certificate": {
+			"year": "Spring 2022",
+			"certification": "Rich Internet Application Development"
 		}
 	}]
 }
