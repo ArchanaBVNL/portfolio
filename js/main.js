@@ -501,9 +501,9 @@ var appExperience = new Vue({
         // page information
         experienceData: '',
         certificateData: '',
-        tableTitle: "Certifications",
-        tableHeader1: "Year",
-        tableHeader2: "Certification",
+        tableTitle: "MS Software Development - Course List",
+        tableHeader1: "Semester",
+        tableHeader2: "Course",
         sapVideoTitle: "Want to know about SAP?",
         sapVideoLink: "https://d.dam.sap.com/m/3fqfxMD?vw=ys",
         upArrow: "images/up.svg",
