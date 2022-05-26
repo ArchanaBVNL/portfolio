@@ -2,7 +2,8 @@
 	"myProjects": [{
 			"project": {
 				"title": "Weather Application",
-				"description": "Developed a responsive web-based application that provides current weather information for a given geographic location. Demo - https://archanabvnl.github.io Source code - https://github.com/ArchanaBVNL/archanabvnl.github.io",
+				"description": "Developed a responsive web-based application that provides current weather information for a given geographic location.",
+				"sourceCode": "https://github.com/ArchanaBVNL/archanabvnl.github.io",
 				"technologies": ["Angular 13", "TypeScript", "Bootstrap 5"],
 				"image": "./images/cabin.svg",
 				"show": false
@@ -10,7 +11,8 @@
 		}, {
 			"project": {
 				"title": "Cabin Reservation System",
-				"description": "Cabin Reservation System is a software designed to be used by a customer to find and reserve a cabin. The design patterns implemented are – Mediator Pattern, Decorator Pattern, and Bridge Pattern. Source code - https://github.com/ArchanaBVNL/cabinReservation",
+				"description": "Cabin Reservation System is a software designed to be used by a customer to find and reserve a cabin. The design patterns implemented are – Mediator Pattern, Decorator Pattern, and Bridge Pattern.",
+				"sourceCode": "https://github.com/ArchanaBVNL/cabinReservation",
 				"technologies": ["Java", "JUnit", "Git", "IntelliJ IDEA"],
 				"image": "./images/cabin.svg",
 				"show": false
@@ -19,7 +21,8 @@
 		{
 			"project": {
 				"title": "Yoga Studio Web Application",
-				"description": "Yoga Studio is a web application built to create, manage, and enroll in yoga courses offered by the studio. Source code - https://github.com/ArchanaBVNL/YogaStudio",
+				"description": "Yoga Studio is a web application built to create, manage, and enroll in yoga courses offered by the studio.",
+				"sourceCode": "https://github.com/ArchanaBVNL/YogaStudio",
 				"technologies": ["Angular 13", "Bootstrap 5", "PHP 8", "MySQL", "Apache Web Server"],
 				"image": "./images/process.svg",
 				"show": false
@@ -28,7 +31,8 @@
 		{
 			"project": {
 				"title": "Web Portfolio",
-				"description": "Created a website that includes a portfolio about self – archanab.me. https://github.com/ArchanaBVNL/portfolio",
+				"description": "Created a website that includes a portfolio about self – archanab.me.",
+				"sourceCode": "https://github.com/ArchanaBVNL/portfolio",
 				"technologies": ["HTML5", "CSS3", "JavaScript", "Vue Framework"],
 				"image": "./images/sudoku.svg",
 				"show": false
