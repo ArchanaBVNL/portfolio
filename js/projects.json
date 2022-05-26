@@ -1,34 +1,38 @@
 {
 	"myProjects": [{
-		"project": {
-			"title": "Weather Application",
-			"description": "Developed a responsive web-based application that provides current weather information for a given geographic location.",
-			"technologies":["Angular 13", "TypeScript", "Bootstrap 5"],
-			"image": "./images/cabin.svg",
-			"show": false
+			"project": {
+				"title": "Weather Application",
+				"description": "Developed a responsive web-based application that provides current weather information for a given geographic location.",
+				"technologies": ["Angular 13", "TypeScript", "Bootstrap 5"],
+				"image": "./images/cabin.svg",
+				"show": false
+			}
+		}, {
+			"project": {
+				"title": "Cabin Reservation System",
+				"description": "Cabin Reservation System is a software designed to be used by a customer to find and reserve a vacation cabin at resort. The software validates a reservation request and confirms a valid reservation. The customer is then sent back a corresponding reservation receipt. The system also includes broadcasting of promotional or generic messages to all the resort customers. The design patterns implemented are – Mediator Pattern, Decorator Pattern, and Bridge Pattern.",
+				"technologies": ["Java", "JUnit", "Git", "IntelliJ IDEA"],
+				"image": "./images/cabin.svg",
+				"show": false
+			}
+		},
+		{
+			"project": {
+				"title": "Process Scheduler Simulation",
+				"description": "Process Scheduler Simulation is a software that simulates the functionality of a process manager that selects a process from a process queue depending on a process priority and wait time. Process scheduling is important for multiprogramming operating systems. The data structures implemented are – ArrayList, PriortiyQueue, and Array.",
+				"technologies": ["Java", "IntelliJ IDEA"],
+				"image": "./images/process.svg",
+				"show": false
+			}
+		},
+		{
+			"project": {
+				"title": "Sudoku Assistant",
+				"description": "Sudoku Assistant is built to help solve any valid Sudoku puzzle entered as an input. A game board input is first validated and then the software finds a solution to display the final solution to the user. The GUI was built using pygame, a Python game module.",
+				"technologies": ["Python", "PyCharm"],
+				"image": "./images/sudoku.svg",
+				"show": false
+			}
 		}
-	}, {
-			"title": "Cabin Reservation System",
-			"description": "Cabin Reservation System is a software designed to be used by a customer to find and reserve a vacation cabin at resort. The software validates a reservation request and confirms a valid reservation. The customer is then sent back a corresponding reservation receipt. The system also includes broadcasting of promotional or generic messages to all the resort customers. The design patterns implemented are – Mediator Pattern, Decorator Pattern, and Bridge Pattern.",
-			"technologies": ["Java", "JUnit", "Git", "IntelliJ IDEA"],
-			"image": "./images/cabin.svg",
-			"show": false
-		}
-	}, {
-		"project": {
-			"title": "Process Scheduler Simulation",
-			"description": "Process Scheduler Simulation is a software that simulates the functionality of a process manager that selects a process from a process queue depending on a process priority and wait time. Process scheduling is important for multiprogramming operating systems. The data structures implemented are – ArrayList, PriortiyQueue, and Array.",
-			"technologies": ["Java", "IntelliJ IDEA"],
-			"image": "./images/process.svg",
-			"show": false
-		}
-	}, {
-		"project": {
-			"title": "Sudoku Assistant",
-			"description": "Sudoku Assistant is built to help solve any valid Sudoku puzzle entered as an input. A game board input is first validated and then the software finds a solution to display the final solution to the user. The GUI was built using pygame, a Python game module.",
-			"technologies": ["Python", "PyCharm"],
-			"image": "./images/sudoku.svg",
-			"show": false
-		}
-	}]
+	]
 }
