@@ -5,7 +5,7 @@
 				"description": "Developed a responsive web-based application that provides current weather information for a given geographic location.",
 				"sourceCode": "https://github.com/ArchanaBVNL/archanabvnl.github.io",
 				"technologies": ["Angular 13", "TypeScript", "Bootstrap 5"],
-				"image": "./images/cabin.svg",
+				"image": "./images/weather.svg",
 				"show": false
 			}
 		}, {
@@ -24,7 +24,7 @@
 				"description": "Yoga Studio is a web application built to create, manage, and enroll in yoga courses offered by the studio.",
 				"sourceCode": "https://github.com/ArchanaBVNL/YogaStudio",
 				"technologies": ["Angular 13", "Bootstrap 5", "PHP 8", "MySQL", "Apache Web Server"],
-				"image": "./images/process.svg",
+				"image": "./images/yoga.svg",
 				"show": false
 			}
 		},
@@ -34,7 +34,7 @@
 				"description": "Created a website that includes a portfolio about self – archanab.me.",
 				"sourceCode": "https://github.com/ArchanaBVNL/portfolio",
 				"technologies": ["HTML5", "CSS3", "JavaScript", "Vue Framework"],
-				"image": "./images/sudoku.svg",
+				"image": "./images/website.svg",
 				"show": false
 			}
 		}
